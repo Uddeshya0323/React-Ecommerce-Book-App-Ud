@@ -1,0 +1,11 @@
+/* Custom styles for Material-UI TextField */
+.MuiFormLabel-required::after {
+    color: red; /* Default color of the asterisk */
+    content: "*"; /* Display asterisk if not already there */
+  }
+  
+  /* Hide asterisk when input has value */
+  .MuiInputBase-input:not(:placeholder-shown) ~ .MuiFormLabel-required::after {
+    display: none; /* Hide the asterisk */
+  }
+  
